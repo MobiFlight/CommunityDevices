@@ -9,8 +9,6 @@
   },
   "Config": {
     "Pins": [
-      "CLK",
-      "Data",
       "CS",
       "D/C",
       "Reset"

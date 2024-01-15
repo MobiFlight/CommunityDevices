@@ -14,9 +14,13 @@ Pico
 * Data: Pin 19
 * CS: Pin 17 for the first display, for more choose as you want
 * Pin 16 can NOT be used for any other device
+
 For both boards D/C and Reset can be choosen as you want.
 
-For now these pins have to be defined within the connector to mark them as used. This will be changed later.
+** Important Remark **
+If you have already used this before, delete your config from the board before updating!
+Once you have updated your board configure the display agin. CLK and Data pins must not be configured anymore as they are fixed (as before).
+Also make sure to use the updated `mobiflight.gnc255.device.json` file.
 
 Connect your display accordingly the above used pins. Depending on your display, you might need to adjust some 
 jumpers on the controller board to enable the SPI interface - below is one example of such display that works
