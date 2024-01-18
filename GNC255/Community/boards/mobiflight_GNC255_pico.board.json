@@ -20,7 +20,7 @@
     "FirmwareBaseName": "mobiflight_gnc255_raspberrypico",
     "FirmwareExtension": "uf2",
     "FriendlyName": "MobiFlight GNC255 Pico",
-    "LatestFirmwareVersion": "2.5.0",
+    "LatestFirmwareVersion": "2.5.1",
     "MobiFlightType": "MobiFlight GNC255 Pico",
     "MobiFlightTypeLabel": "MobiFlight GNC255 Pico",
     "ResetFirmwareFile": "reset.raspberry_pico_flash_nuke.uf2",
