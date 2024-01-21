@@ -93,10 +93,6 @@ void MFCustomDevice::attach(int16_t adrPin, uint16_t adrType, uint16_t adrConfig
         multiple devices, it is done here.
     ********************************************************************************************** */
     params = strtok_r(parameter, "|", &p);
-    _clk   = atoi(params);
-    params = strtok_r(NULL, "|", &p);
-    _data  = atoi(params);
-    params = strtok_r(NULL, "|", &p);
     _cs    = atoi(params);
     params = strtok_r(NULL, "|", &p);
     _dc    = atoi(params);
