@@ -37,7 +37,7 @@
     "DelayAfterFirmwareUpdate": 0,
     "FirmwareBaseName": "mobiflight_gnc255_mega",
     "FirmwareExtension": "hex",
-    "LatestFirmwareVersion": "2.5.0",
+    "LatestFirmwareVersion": "2.5.1",
     "FriendlyName": "MobiFlight GNC255 Mega",
     "MobiFlightType": "MobiFlight GNC255 Mega",
     "MobiFlightTypeLabel": "MobiFlight GNC255 Mega",
