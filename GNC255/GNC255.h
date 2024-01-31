@@ -44,6 +44,7 @@ private:
     bool                                 _hasChanged;
     char                                 activeFrequency[8]  = "123.456";
     char                                 standbyFrequency[8] = "123.456";
+    uint8_t                              displayContrast = 32;
 
     void _update();
     void _stop();
@@ -53,4 +54,5 @@ private:
     void updateActiveLabel(const char *frequency);
     void updateStandbyLabel(const char *frequency);
     void _renderLabel(const char *text, Label label, Position offset, bool update = false);
+    void setContrast(uint8_t displayContrast);
 };
