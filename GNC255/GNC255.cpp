@@ -34,14 +34,19 @@ void GNC255::attach()
         Next call the constructor of your custom device
         adapt it to the needs of your constructor
     ********************************************************************************** */
-    if (!FitInMemory(sizeof(U8G2_SSD1322_NHD_256X64_F_4W_SW_SPI))) {
+    // if (!FitInMemory(sizeof(U8G2_SSD1322_NHD_256X64_F_4W_SW_SPI))) {
+    if (!FitInMemory(sizeof(U8G2_SSD1362_256X64_F_4W_HW_SPI))) {
         // Error Message to Connector
         cmdMessenger.sendCmd(kStatus, F("Custom Device does not fit in Memory"));
         return;
     }
 
+    /* SSD1322 */
     //_oledDisplay = new (allocateMemory(sizeof(U8G2_SSD1322_NHD_256X64_F_4W_SW_SPI))) U8G2_SSD1322_NHD_256X64_F_4W_SW_SPI(U8G2_R0, _clk, _data, _cs, _dc);
-    _oledDisplay = new (allocateMemory(sizeof(U8G2_SSD1322_NHD_256X64_F_4W_HW_SPI))) U8G2_SSD1322_NHD_256X64_F_4W_HW_SPI(U8G2_R0, 53, _dc, _reset);
+    //_oledDisplay = new (allocateMemory(sizeof(U8G2_SSD1322_NHD_256X64_F_4W_HW_SPI))) U8G2_SSD1322_NHD_256X64_F_4W_HW_SPI(U8G2_R0, 53, _dc, _reset);
+
+    // Surenoo SOG25664B2 (SSD1362) 7pin module
+    _oledDisplay = new (allocateMemory(sizeof(U8G2_SSD1362_256X64_F_4W_HW_SPI))) U8G2_SSD1362_256X64_F_4W_HW_SPI(U8G2_R0, _cs, _dc, _reset);    
     begin();
 }
 
