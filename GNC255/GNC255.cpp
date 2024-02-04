@@ -12,11 +12,11 @@ Layout ComLayout = {
 };
 
 Position OffsetActive = {
-    0,
+    6,
     0};
 
 Position OffsetStandby = {
-    140,
+    146,
     0};
 
 GNC255::GNC255(uint8_t clk, uint8_t data, uint8_t cs, uint8_t dc, uint8_t reset)
