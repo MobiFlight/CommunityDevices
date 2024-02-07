@@ -2,13 +2,14 @@
 #include <U8g2lib.h>
 #include "allocateMem.h"
 #include "commandmessenger.h"
+#include "fonts.h"
 
 Layout ComLayout = {
-    {u8g2_font_logisoso22_tn, 22, {10, 32}},
-    {u8g2_font_profont10_mr, 10, {0, 32}},
-    {u8g2_font_profont12_mr, 13, {18, 45}},
-    {u8g2_font_profont12_mr, 12, {107, 18}},
-    {u8g2_font_profont12_mr, 12, {120, 18}},
+    {gnc255frequency, 22, {31, 36}}, /* Value (frequency)*/
+    {u8g2_font_4x6_mr, 6, {19, 32}}, /* ValueLabel (ACT/STB) */
+    {u8g2_font_profont12_mr, 13, {33, 48}}, /* Valuelabel (active or standby label) */
+    {u8g2_font_profont12_mr, 12, {116, 24}}, /* ModeComLabel (COM mode indicator) */
+    {u8g2_font_profont12_mr, 12, {127, 24}}, /* ModeNavLabel (NAV mode indicator) */
 };
 
 Position OffsetActive = {
@@ -16,7 +17,7 @@ Position OffsetActive = {
     0};
 
 Position OffsetStandby = {
-    140,
+    116,
     0};
 
 GNC255::GNC255(uint8_t clk, uint8_t data, uint8_t cs, uint8_t dc, uint8_t reset)
