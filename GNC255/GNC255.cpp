@@ -5,7 +5,7 @@
 #include "fonts.h"
 
 Layout ComLayout = {
-    {gnc255frequency, 22, {31, 36}}, /* Value (frequency)*/
+    {gnc255frequency, 22, {31, 35}}, /* Value (frequency)*/
     {u8g2_font_4x6_mr, 6, {19, 32}}, /* ValueLabel (ACT/STB) */
     {u8g2_font_profont12_mr, 13, {33, 48}}, /* Valuelabel (active or standby label) */
     {u8g2_font_profont12_mr, 12, {116, 24}}, /* ModeComLabel (COM mode indicator) */
